@@ -1,0 +1,461 @@
+body.wp-admin {
+    min-width: 785px;
+}
+
+body, #wpbody, .form-table .pre {
+    color: #333333;
+	
+}
+
+body, textarea {
+    /*line-height: 1.4em;*/
+}
+
+.alphaimage{
+	padding-top:9px;
+}
+
+body, td, textarea, input, select {
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    font-size: 13px;
+}
+
+#footer, #footer a {
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 12px;
+    font-style: italic;
+}
+#footer, #footer-upgrade {
+   /* background: none repeat scroll 0 0 #39536A;
+    color: #999999;*/
+}
+#footer {
+   /*  clear: both;
+    position: relative;
+    width: 100%;
+	float: left; */
+}
+#footer, #footer a {
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.alignleft {
+    float: left;
+}
+#footer p {
+    line-height: 15px;
+    margin: 0;
+    padding: 15px;
+}
+
+#user_info a:link, #user_info a:visited, #footer a:link, #footer a:visited {
+    color: #333333;
+    text-decoration: none;
+	font-weight:normal;
+}
+
+body, #wpbody, .form-table .pre {
+    color: #333333;
+}
+colors...0091217 (line 1)
+
+#becontent {
+    height: 100%;
+    padding-bottom: 50px;
+	background-color:#fff;
+	
+}
+#bewrap {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+	background-color:#fff;
+	
+}#bebody {
+    margin-left: 175px;
+	padding: 12px 20px 40px 20px;
+	height: 100%;
+    padding-bottom: 50px;
+    min-height:500px;
+}
+
+#adminmenu {
+    clear: left;
+    float: left;
+    list-style: none outside none;
+    margin: 15px 5px 0px 15px;
+    padding: 0;
+    position: relative;
+    width: 145px;
+	margin-bottom: 10px;
+}
+#adminmenu li {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+#adminmenu * {
+    border-color: #E3E3E3;
+}
+div.wp-menu-image1{
+background: url("../images/menu-vs.png") no-repeat scroll -240px -33px transparent;
+}
+div.wp-menu-image2{
+background: url("../images/menu-vs.png") no-repeat scroll -270px -33px transparent;
+}
+div.wp-menu-image3{
+background: url("../images/menu-vs.png") no-repeat scroll -151px -33px transparent;
+}
+div.wp-menu-image3{
+background: url("../images/menu-vs.png") no-repeat scroll -151px -33px transparent;
+}
+div.wp-menu-image4{
+background: url("../images/menu-vs.png") no-repeat scroll -303px -1px transparent;
+}
+div.wp-menu-image5{
+background: url("../images/menu-vs.png") no-repeat scroll 0px -33px transparent;
+}
+div.wp-menu-image-product{
+background: url("../images/menu-vs.png") no-repeat scroll -332px -33px transparent;
+}
+#adminmenu div.wp-menu-image-product {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image1 {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image2 {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image3 {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image4 {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu div.wp-menu-image5 {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+#adminmenu #menu-dashboard div.wp-menu-image {
+    background: url("../images/menu-vs.png") no-repeat scroll -61px -1px transparent;
+}
+#adminmenu .wp-menu-toggle {
+    clear: right;
+    cursor: default;
+    float: right;
+    height: 27px;
+    margin: 1px 0 0 10px;
+    padding: 1px 2px 0 0;
+    width: 22px;
+}
+#adminmenu .menu-top-first a.menu-top, .folded #adminmenu li.menu-top-first, #adminmenu .wp-submenu .wp-submenu-head {
+    border-style: solid solid none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-width: 1px 1px 0;
+	border-style: solid;
+}
+#adminmenu .menu-top-last a.menu-top, .folded #adminmenu li.menu-top-last{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+	box-shadow: 4px 3px 4px #999999;
+}
+#adminmenu .menu-top-last a.menu-top:hover, .folded #adminmenu li.menu-top-last:hover {
+box-shadow: none;
+}
+
+#adminmenu li.menu-top-second a.menu-top{
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#adminmenu a.menu-top {
+    background: url("../images/menu-bits.gif") repeat-x scroll left -379px #F1F1F1;
+}
+#adminmenu a.menu-top {
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    line-height: 18px;
+    min-width: 11em;
+    padding: 5px;
+}
+#adminmenu a.menu-top, #adminmenu .wp-submenu-head {
+    font: 13px/18px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	color: #7E7E7E;
+	text-decoration: none;
+}
+#adminmenu li.menu-top {
+    min-height: 26px;
+}
+
+#adminmenu li {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+#adminmenu a {
+display:block;
+}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu .menu-top .current {
+    background: url("../images/menu-bits-vs.gif") repeat-x scroll left top #6D6D6D;
+    border-color: #6D6D6D;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#user_info {
+    color: #999999;
+}
+
+#user_info {
+    float: right;
+    font-size: 12px;
+    height: 46px;
+    line-height: 46px;
+}
+
+h2 {
+    font: italic 24px/35px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    margin: 0;
+    padding: 0px 15px 3px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+	color: #464646;
+	/* box-shadow: 15px 12px 18px #999999; */
+}
+
+.myprof{
+	float:left;
+}
+
+.myprof form {
+	background: none repeat scroll 0 0 #FFFFFF;
+    /*border: 1px solid #E5E5E5;*/
+    font-weight: normal;
+    margin-left: 8px;
+    padding: 16px 16px 40px;
+    width:250px;
+}
+
+.myprof form input {
+	border: 1px solid #E5E5E5;
+}
+
+.errMsg {
+	background-color: #e6c0c0;
+	border:1px solid #de7a7b;
+	width:250px; 
+	color:#ffffff; 
+	font-weight:bold; 
+	text-align:center;
+	margin-left: 450px;
+	margin-bottom: 1px;
+}
+.errMsgLogin {
+	font-weight:bold;
+	background-color: #FFFFCC;
+    border: 1px solid #FEC210;
+    color: #000000;
+    /* font-weight: bold; */
+    margin-left: 9px;
+    padding: 11px;
+    text-align: center;
+    /* width: 313px; */
+}
+.myForm{
+	border: 1px solid #888888;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 4px #999999;
+}
+.newtable{
+	/* width:50%; */
+	width:75%;
+	background:none;	
+	margin-top: 20px;
+}
+.newsTableFancy{
+	width:300px;
+	margin-left:-165px;
+	background:black;	
+	margin-top: 90px;
+}
+.newtable input{
+	border: 1px solid lightgray;
+    border-radius: 4px 4px 4px 4px;	
+    padding:3px;
+}
+
+.newtable input[type="file"] {
+	border: none;
+}
+
+
+.newtable tr td{
+	background: none;
+    border-bottom: none;
+    font-style:normal;
+    vertical-align: middle;
+}
+.newtable tr:nth-child(2n) td {
+    background: none;
+}
+.button-new{
+    border-color: #BBBBBB;
+    border-radius: 11px 11px 11px 11px;
+    border-style: solid;
+    border-width: 1px;
+    color: #464646;
+    font-size: 11px;
+    margin-bottom: 2px;
+    padding: 2px 12px;
+    text-decoration: none;
+    font-weight:normal;
+}
+.button-new:hover{
+    border-color: #666666;
+    color: #000000;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+input.button, button.button, a.button, .button, .submit input, .button-secondary {
+    background: url("../images/button-grad.png") repeat-x scroll left top #21759B;
+    border-color: #298CBA;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    cursor:pointer;		
+   
+}
+.gap{
+  margin-top: 5px;
+}
+.checkboxDiv{
+float:left;
+width:200px;
+}
+.newtable tr td{
+vertical-align: top;
+}
+.newtable tr td.tdleft{
+width:200px;
+}
+.newtable textarea {
+    border: 1px solid lightgray;
+    border-radius: 4px 4px 4px 4px;
+    padding: 3px;
+}
+.checkbox {
+float:left;
+width: 200px;
+}
+
+label[for="PortPortId"]{
+	float:left;
+	width:100%;
+}
+
+#adminmenu div.wp-menu-image-admin {
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+div.wp-menu-image-admin {
+    background: url("../images/menu-vs.png") no-repeat scroll -212px -1px transparent;
+}
+
+h3.hndle{
+cursor:pointer;
+}
+div.handlediv{
+background: url("../images/arrows.png") no-repeat scroll 4px 8px transparent;
+}
+.newtable tbody tr td.tdleft {
+    width: 200px;
+}
+.detailesUser{
+	color:black; font-weight:bold;
+}
+
+.analysisOuter{
+	float:left;
+	height:auto;
+	width:664px;
+	margin-bottom:45px;
+}
+.analysisOuter .row{
+	float:left;
+	height:auto;
+	width:664px;
+	border-bottom:1px dashed #000;
+	padding:12px 0px;
+}
+.analysisOuter .row:hover{
+	background-color:#f4f3f3;
+}
+.analysisOuter .row p.blue{
+	float:left;
+	height:auto;
+	width:642px;
+	font-size:14px;
+	color:#0786b8;
+	padding:2px 0px 4px 22px;
+	background:url(../images/bullet.jpg) left no-repeat;
+}
+.analysisOuter .row p.black{
+	float:left;
+	height:auto;
+	width:664px;
+	color:#000;
+	line-height:20px;
+}
+.analysisOuter ul{
+	float:right;
+	height:17px;
+	margin-top:10px;
+}
+.analysisOuter ul li{
+	float:left;
+	height:17px;
+	color:#000;
+}
+.analysisOuter ul li a{
+	width:14px;
+	font-size:12px;
+	line-height:17px;
+	display:inline;
+	list-style:none;
+	color:#000;
+	padding:0px 4px;
+}
+.analysisOuter ul li a:hover{
+	text-decoration:none;
+	background:url(../images/pagingBg.jpg) left no-repeat;
+	color:#fff;
+}
+.analysisOuter ul li a:hover, .analysisOuter ul li a.selected{
+	background:url(../images/pagingBg.jpg) left no-repeat;
+	color:#fff;
+}

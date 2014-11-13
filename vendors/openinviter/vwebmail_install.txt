@@ -1,0 +1,40 @@
+Extract the contents of the openinviter.tar.gz file you have just downloaded.
+
+I) FILE TO UPLOAD
+
+    1)Copy  'OpenInviter' in /htdocsc folder from your vwebmail install folder
+
+II) Modifications !!!!!:
+
+    1)FILE : addressbook.import.html, found in /templates/addressbook.import.html
+	
+		FIND LINES :
+			// Select all csv file fields
+		for (i=0; i<formObj.elements['fields[]'].length; i++) {
+			formObj.elements['fields[]'].options[i].selected = true;
+			}		
+		}
+	//-->
+	</script>
+
+	
+	INSERT AFTER
+	
+		<br />
+
+	<table align='center' cellspacing='0' cellpadding='0' width='620'>
+		<tr height='20px'><td></td></tr>
+		<tr>
+			<td class="table_bg">
+					<h3 style="margin-left: 15px; font-style: italic;">Import Contacts</h3>
+					<?include_once('../htdocs/OpenInviter/OpenInviterFrontend.php')?>	
+			</td>
+		</tr>
+		<tr height='20px'><td></td></tr>
+	</table>
+
+
+III) Run postinstall.php in your browser, from folder OpenInviter you've just copied, and after that delete it.
+
+IV)The OpenInviter plugin will be found in the Addresses->Import section of vwebmail.
+

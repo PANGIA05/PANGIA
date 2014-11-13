@@ -1,0 +1,111 @@
+/* Get the root path */
+
+var pathArray = window.location.href.split( '/' );
+var protocol = pathArray[0];
+var host = pathArray[2];
+var hosts = pathArray[3];
+var url = protocol + '//' + host +'/' + hosts ;
+
+$(document).ready(function(){
+  
+$('#clickid').click(function()
+{
+$.ajax({
+	url: url+"/users/removeNotification",    
+	type: "POST",
+	cache: false,
+	success: function(msg) { 
+	if(msg==1)
+	{
+		$('.readcount').hide();
+	}            
+	
+}        
+});
+
+var X=$(this).attr('value');
+if(X==1)
+{
+$('.my-notfication').hide();
+$('.notification-dd').attr('value', '0');
+}
+else
+{
+$('.my-notfication').show();
+$('.notification-dd').attr('value', '1');
+}
+});
+  
+});
+
+$(function(){
+$(".search").keyup(function() 
+{ 
+//alert(url);
+var inputSearch = $(this).val();
+var dataString = 'searchword='+ inputSearch;
+if(inputSearch!='')
+{
+      $.ajax({
+      type: "POST",
+      url: url+"/users/searchforuser",
+      data: dataString,
+      cache: false,
+      success: function(html)
+      {
+      $("#divResult").html(html).show();
+      }
+      });
+}return false;    
+});
+/*
+$('#divResult').live('click',function(e){ 
+      var $clicked = $(e.target);
+      var $name = $clicked.find('.name').html();
+      var decoded = $("<div>").html($name).text();
+      $('#inputSearch').val(decoded);
+});
+$(document).live("click", function(e) { 
+      var $clicked = $(e.target);
+      if (! $clicked.hasClass("search")){
+      jQuery("#divResult").fadeOut(); 
+      }
+});
+$('#inputSearch').click(function(){
+      jQuery('#divResult').fadeIn();
+});*/
+});
+
+
+function accept_request(id) {
+	$.ajax({
+				url: url+"/users/acceptFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) { 
+					 if(msg==1){	
+						$('.request-action-'+id).html('Request Accepted');
+						}
+					}        
+		});
+	
+		}
+
+
+function decline_request(id) {
+	$.ajax({
+				url: url+"/users/declineFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) {						
+					if(msg==1){	
+						$('.request-action-'+id).html('Request Decline');
+						}
+					}        
+	});
+	}
+
+
+
+
+
+
+

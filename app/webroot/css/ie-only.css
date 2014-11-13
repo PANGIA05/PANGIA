@@ -1,0 +1,26 @@
+/* iWrestle IE only styles */
+.at-box{background:#4254da;}
+#home-slider .slider .dots{top:-265px;}
+#home-slider .slider{margin-top:-33px;}
+
+.fs-small{font-size:0.5em;}
+
+#newsletter-email{position:relative;height:38px;border:1px solid #efefef;border-radius:20px;padding-left:20px;color:#bababa;display:block;width:280px;line-height:38px;}
+
+#main-lr{background-image:none !important;}
+#main-lr{position:relative;display:inline-block;width:100%;margin-bottom:0;}
+
+.form-box input[type="text"], .form-box input[type="email"], .form-box input[type="password"]{height:auto;padding:12px 0 11px 10px;}
+.form-box input, form input{font-family:Arial;}
+
+.owl-controls .owl-buttons .owl-prev, .owl-controls .owl-buttons .owl-next{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=06)";}
+.owl-controls .owl-buttons .owl-prev:hover, .owl-controls .owl-buttons .owl-next:hover{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";}
+
+#user-nav ul li a i{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";}
+#user-nav ul li a:hover i{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+
+.scrollable.default-skin .scroll-bar .thumb{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";}
+.scrollable.default-skin .scroll-bar:hover .thumb{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";}
+
+.share-photo .with-photo .a-details .a-det-left .sp-osn .so-icon a{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";}
+.share-photo .with-photo .a-details .a-det-left .sp-osn .so-icon a:hover{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}

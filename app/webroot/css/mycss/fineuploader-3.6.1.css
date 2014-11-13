@@ -1,0 +1,140 @@
+/*
+ * Copyright 2013, Widen Enterprises info@fineuploader.com
+ *
+ * Licensed under GNU GPL v3, see license.txt.
+ */
+ 
+ 
+#fine-uploader {}
+.qq-uploader {
+    position: relative;
+    width: 100%;
+}
+.qq-upload-button {
+display: block;
+    font-size: 14px;
+    line-height: 2.5em;
+    text-align: center;    color: #5F90B0;
+}
+
+.qq-upload-button-focus {
+    outline: 1px dotted #000000;
+}
+.qq-upload-drop-area, .qq-upload-extra-drop-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    z-index: 2;
+    background: #fff;
+    text-align: center;
+}
+.qq-upload-drop-area span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -16px;
+    font-size: 14px;
+}
+.qq-upload-extra-drop-area {
+    position: relative;
+    margin-top: 50px;
+    font-size: 16px;
+    padding-top: 30px;
+    height: 20px;
+    min-height: 40px;
+}
+.qq-upload-drop-area-active {
+    background: #fff;
+}
+.qq-upload-list {width:72%;
+    margin: 0;float:right;
+    padding: 0;
+    list-style: none; display:none;
+}
+.qq-upload-list li {
+    margin: 0;padding-left:10px;
+    line-height: 37px;
+    font-size: 16px;
+border-radius:4px 4px 4px 4px; border:1px solid #016B97; height:38px;
+}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-retry, .qq-upload-failed-text, .qq-upload-finished, .qq-upload-delete {
+    margin-right: 12px;
+}
+.qq-upload-file {
+}
+.qq-upload-spinner {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.qq-drop-processing {
+    display: none;
+}
+.qq-drop-processing-spinner {
+    display: inline-block;
+    background: url("processing.gif");
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+}
+.qq-upload-finished {
+    display:none;
+    width:15px;
+    height:15px;
+    vertical-align:text-bottom;
+}
+.qq-upload-retry, .qq-upload-delete {
+    display: none !important;
+    color: #000000;
+}
+.qq-upload-cancel, .qq-upload-delete {
+	color: #000000;
+}
+.qq-upload-retryable .qq-upload-retry {
+    display: inline;
+}
+.qq-upload-size, .qq-upload-cancel, .qq-upload-retry, .qq-upload-delete {
+    font-size: 12px;
+    font-weight: normal;
+}
+.qq-upload-failed-text {
+    display: none;
+    font-style: italic;
+    font-weight: bold;
+}
+.qq-upload-failed-icon {
+    display:none;
+    width:15px;
+    height:15px;
+    vertical-align:text-bottom;
+}
+.qq-upload-fail .qq-upload-failed-text {
+    display: inline;
+}
+.qq-upload-retrying .qq-upload-failed-text {
+    display: inline;
+    color: #D60000;
+}
+.qq-upload-list li.qq-upload-success {
+    background-color: #5DA30C;
+    color: #FFFFFF; display:none;
+}
+.qq-upload-list li.qq-upload-fail {
+    background-color: #D60000;
+    color: #FFFFFF;
+}
+
+.qq-upload-cancel{ display:none !important;}
+.qq-upload-delete{display:none !important; }
+
+#add-photo-pp .qq-uploader .qq-upload-button{background:transparent url(../images/sprite_icons.png) no-repeat -2px -498px;width:129px;height:40px;text-indent:-99999px;}
+#add-photo-pp{margin-top:10px;}
+#pp-addphoto .qq-upload-button{line-height:normal;}
+#pp-addphoto .qq-upload-button:before{content:'+';float:left;font-size:14px;font-family: SegoeWP_semibold;margin-left:12px;}
+#browse-file .qq-upload-button{ background:#707070; height:45px; line-height:45px;color:#fff;width:68px; border:1px solid #cccccc;float:right}
+#browse-file{width:250px;float:left;margin:20px;}
+#browse-file .qq-upload-list{ display:block;float:left;width:178px;border:1px solid #CCCCCC; line-height:45px; height:45px;}
+#browse-file .qq-upload-list li{border-radius:0px;border:none;}

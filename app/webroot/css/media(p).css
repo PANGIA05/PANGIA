@@ -1,0 +1,586 @@
+@charset "utf-8";
+/* CSS Document */
+ @media only screen and (min-width: 1025px){
+	 
+.connect_favorite {
+    float: right;
+    width: 180px;
+}
+	
+	 
+ }
+
+
+/* for ipad  */
+
+
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	 
+	
+.header_wrapper {    margin: 30px auto 0;    width: 90%;}
+	 .social{}
+	 nav { float: left;    margin-top: 20px;}
+	 nav ul li a {font-size: 14px;}
+	 .banner { width:95%;}	
+	 .banner img{width:100%;} 	 
+.banner_cnotainer { height:auto;}
+.mid_part {    width: 95%;}
+.left_side{width:auto;}
+.left_side .heading { float: none;}
+footer { width: 95%;}
+.banner_shadow { width: 640px;}
+.banner_shadow img{ width:100%;}
+/*-----Register page-----*/
+.left_side_inner { width:auto; }
+.right_side_inner {margin-left: 20px;}
+.left_side_inner h1{font-size:34px;}
+.left_side_inner p label {
+    color: #016B97;
+    float: left;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.left_side_inner p .textbox {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 38px;
+    padding-left: 10px;
+    width: 100%;
+}
+.r_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.membership_Types { margin-left:0;}
+.let_get_Started {
+    margin-left: 0%;
+}
+
+.textbox_white {
+    background: none repeat scroll 0 0 #FFFFFF;
+       float: left;
+       width: 100%;
+}
+
+.profile_textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 101px;
+    padding-left: 10px;
+    padding-top: 8px;
+    width: 100%;
+}
+.check_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.radio_container {
+    color: #016B97;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+}
+
+.right_side { margin-left:20px;}
+/*--------------------for search page-----------*/
+
+.search_Text_box { width:66%;}
+.result_desc {
+    float: left;
+    width: 69%;
+}
+
+/*--------------------for profile detail page-----------*/
+
+.profile_name img {
+    display: block;
+    margin-top: 11px; margin-left:0;
+    vertical-align: middle;
+}
+.Industry_name {
+      margin: 10px 0 5px;font-size: 15px;
+}
+.company_name {
+       margin: 5px 0;font-size: 15px;
+}
+
+.location {
+       margin: 5px 0;font-size: 15px;
+    }
+.connect_favorite {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.connect_btn_box {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.favourite_btn_box {
+    float: right;
+}
+
+/*----------------for databse page--------------------*/
+.full_width_container { width:87%;}
+
+ }
+/* for android tablet  */
+
+ @media only screen and (min-width: 481px) and (max-width: 767px) {
+	 
+	 .header_wrapper { width: 90%;}
+	 nav {float: left;    margin-top: 20px;}
+	 nav ul li a {font-size: 14px;}
+	 .banner {width: 95%;}	
+	 .banner img{width:100%;} 	 
+.banner_cnotainer { height: auto;}
+.mid_part { width: 95%;}
+.left_side .heading { float: none;}
+footer {width: 95%;}
+.sign_in {  clear: both;    float: right;    margin-top: 10px; margin-right:0;}
+.logo_container {    float: left;    width: 50%;}
+nav {    clear: both;    float: left;    margin-top: 20px;    text-align: center;    width: 100%;}
+nav ul li a { display: block;    font-size: 14px;}
+nav ul li {    display: block;    width: 100%;}
+.left_side {    float: left;    height: auto;    margin-top: 10px;    width: 86%;}
+.right_side {      width: 100%; float:left;}
+	.logo_container span a {  font-size: 14px; }
+.sign_up img{width:70%;}
+footer ul li {      margin-right: 7px;}
+/*-----Register page-----*/
+
+.left_side_inner {
+    float: left;
+    width: auto;
+}
+.right_side_inner { width:100%;}
+.left_side_inner h1{font-size:34px;}
+.left_side_inner p label {
+    color: #016B97;
+    float: left;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.left_side_inner p .textbox {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 38px;
+    padding-left: 10px;
+    width: 100%;
+}
+.r_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.membership_Types { margin-left:0;}
+.let_get_Started {
+    margin-left: 0%;
+}
+.adv_block {    float: left;}
+
+.textbox_white {
+    background: none repeat scroll 0 0 #FFFFFF;
+       float: left;
+       width: 100%;
+}
+
+
+.textbox_white {
+    background: none repeat scroll 0 0 #FFFFFF;
+       float: left;
+       width: 100%;
+}
+
+.profile_textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 101px;
+    padding-left: 10px;
+    padding-top: 8px;
+    width: 100%;
+}
+.check_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.radio_container {
+    color: #016B97;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+}	 
+/*----------------- for login_popup--------------*/  
+
+.login_popup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 8px 8px 8px 8px;
+    height: auto;
+    margin: 0 8%;
+    overflow: hidden;
+    padding: 25px 40px;
+    width: 65%;
+}
+
+.login_btns .login_submit {
+    background: none repeat scroll 0 0 #23B1E6;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 0 #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 21px;
+    font-weight: bold;
+    height: 38px;
+    margin-left: 0;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.forgot_pass {
+    float: right;
+    line-height: 22px;
+}
+
+.new_user {
+    float: right;
+    line-height: 22px;
+}
+/*--------------------for search page-----------*/
+
+.search_Text_box { width:66%;}
+.result_desc {
+    float: left;
+    width: 69%;
+}
+/*--------------------for profile detail page-----------*/
+
+.profile_name img {
+    display: block;
+    margin-top: 11px; margin-left:0;
+    vertical-align: middle;
+}
+.Industry_name {
+      margin: 10px 0 5px;font-size: 15px;
+}
+.company_name {
+       margin: 5px 0;font-size: 15px;
+}
+
+.location {
+       margin: 5px 0;font-size: 15px;
+    }
+.connect_favorite {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.connect_btn_box {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.favourite_btn_box {
+    float: right;
+}
+/*----------------for databse page--------------------*/
+.full_width_container { width:79%;}
+
+
+
+
+ }
+/* for iphone   */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	
+	
+	 .header_wrapper { width: 82%;}
+	 nav {    float: left;    margin-top: 20px;}
+	 nav ul li a {font-size: 14px;}
+	 .banner {width: 95%;}	
+	 .banner img{width:100%;} 	 
+.banner_cnotainer { height: auto;}
+.mid_part {  width: 95%;}
+.left_side .heading {  float: none;}
+footer { width: 95%;}
+.sign_in {    clear: none;    float: none;    margin-right: 0;    margin-top: 0;}
+.logo_container {    float: left;    width: 100%;}
+.logo_container img{ width: 90%;}
+.logo_container span a {    font-size: 12px;}
+nav {    clear: both;    float: left;    margin-top: 20px;    text-align: center;    width: 100%;}
+nav ul li a { display: block;    font-size: 14px;}
+nav ul li { display: block;    width: 100%;}
+.left_side {    float: left;    height: auto;    margin-top: 10px;    width: 78%;}
+.right_side {      width: 100%; float:left;}
+.sign_up img{width:70%;}
+footer ul li {    line-height: 30px;    margin-right: 8px;}
+footer{height:auto;}
+footer ul {    float: left;    text-align: center;    width: 100%;}
+.copy {    color: #FFFFFF;    display: block;    float: right;    font-size: 12px;    line-height: 30px;    text-align: center;    width: 100%;}
+.social {    float: left;    margin-top: 20px;    width: 100%;}
+/*-----Register page-----*/
+
+
+.left_side_inner {
+    float: left;
+    width: 88%; padding: 20px 15px 30px;
+}
+.right_side_inner { width:100%;}
+.left_side_inner h1{font-size:23px;}
+.left_side_inner p label {
+    color: #016B97;
+    float: left;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.left_side_inner p .textbox {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 38px;
+    padding-left: 10px;
+    width: 96%;
+}
+.r_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.membership_Types { margin-left:0; background: url("../images/red_Strip.jpg") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    padding-left: 20px;
+    width: 237px;}
+.let_get_Started {
+    margin-left: 0%;
+}
+.adv_block {    float: left;}
+.radio_container {
+    color: #016B97;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+}
+
+.textbox_white {
+    background: none repeat scroll 0 0 #FFFFFF;
+       float: left;
+       width: 95%;
+}
+
+.profile_textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 101px;
+    padding-left: 10px;
+    padding-top: 8px;
+    width: 95%;
+}
+.check_btns {
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    width: 100% !important;
+}
+.radio_container {
+    color: #016B97;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+	
+}
+
+.btn_let_get_connected {    font-size: 22px;}
+
+.top_Tabs li {
+    display: inline;
+    float: left;
+    margin-right: 21px;
+    width: 89%;   margin-bottom: 10px;
+}
+.top_Tabs li a {
+    color: #333333;
+    float: left;
+    font-size: 15px;
+    padding: 8px 15px;
+    width: 100%;
+}
+/*----------------- for login_popup--------------*/
+.login_popup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 5px solid #000000;
+    border-radius: 8px 8px 8px 8px;
+    height: auto;
+    margin: 0 7%;
+    overflow: hidden;
+    padding: 25px;
+    width: 68%;
+}
+
+.login_btns .login_submit {
+    background: none repeat scroll 0 0 #23B1E6;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 0 #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 21px;
+    font-weight: bold;
+    height: 38px;
+    margin-left: 0;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+.forgot_pass {
+    float: right;
+    line-height: 22px;
+}
+
+.new_user {
+    float: right;
+    line-height: 22px;
+}
+/*--------------------for search page-----------*/
+
+
+.search_Text_box {
+    width: 95%;
+}
+.result_desc {
+    float: left;
+    width: 58%;
+}
+
+
+.search_btn {
+    background: none repeat scroll 0 0 #23B1E6;
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 0 #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.sort {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.sort select {
+    border: 1px solid #016B97;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    height: 28px;
+    padding: 5px;
+    width: 100%;
+}
+/*--------------------for profile detail page-----------*/
+
+.profile_name img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.Industry_name {
+      margin: 10px 0 5px;font-size: 15px;
+}
+.company_name {
+       margin: 5px 0;font-size: 15px;
+}
+
+.location {
+       margin: 5px 0;font-size: 15px;
+    }
+.connect_favorite {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.connect_btn_box {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.favourite_btn_box {
+    float: left;
+}
+.person_details {
+    float: left;
+    margin-left: 0;
+    margin-top: 7px;
+    width: auto;
+}
+/*----------------for databse page--------------------*/
+.full_width_container { width:86%;padding: 20px 20px 30px;}
+
+.package_radio_btns {
+    color: #016B97;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left: 0;
+    width: 100%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+

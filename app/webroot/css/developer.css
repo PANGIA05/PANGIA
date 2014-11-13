@@ -1,0 +1,13 @@
+#hw0 .rh-links .wu{
+	margin-right: 4px;
+}
+span.ad-url a{
+	word-wrap: break-word;
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+	#left-sec{ display: none;}
+	#al-boxes #right-sec,#fw-3,#fw-1,#fw-2,#fw-4,#newsletter input[type="email"]{ width: 100%;}
+	
+}

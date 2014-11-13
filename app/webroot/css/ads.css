@@ -1,0 +1,23 @@
+/* Advertisements design */
+.side-ads{top:272px;position:absolute;min-width:140px;width:140px;height:800px;}
+#ads-left{left:50%;margin-left:-620px;}
+#ads-right{right:50%;margin-right:-620px;}
+
+.adtc{padding-bottom:6px;border-bottom:1px solid #cecece;}
+.adtc span{color:#bab8b8;font-size:11px;}
+.adtc a{color:#878787;text-decoration:underline;}
+.adtc a:hover{color:#5b5b5b;}
+
+.ad-box{padding:14px 0;border-bottom:1px dashed #cecece;}
+.ad-box:last-child{border:0;}
+.ad-title{font-size:12px;line-height:14px;font-weight:700;}
+.ad-title a{color:#878787;}
+.ad-title a:hover{color:#5b5b5b;}
+
+.ad-url{font-size:10px;}
+.ad-url a{color:#9b9a9a;}
+
+.ad-img{margin-top:10px;}
+.ad-img img{width:100%;}
+
+.banner-ad .ad-img{margin-top:0;}

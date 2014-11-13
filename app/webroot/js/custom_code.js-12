@@ -1,0 +1,389 @@
+/* Get the root path */
+
+var pathArray = window.location.href.split( '/' );
+var protocol = pathArray[0];
+var host = pathArray[2];
+var hosts = pathArray[3];
+var url = protocol + '//' + host +'/' + hosts ;
+	
+function accept_request(id) {
+	$.ajax({
+				url: url+"/users/acceptFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) { 
+					 if(msg==1){	
+						$('.request-action-'+id).html('Request Accepted');
+						}
+					}        
+		});
+	
+		}
+
+
+function decline_request(id) {
+	$.ajax({
+				url: url+"/users/declineFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) {						
+					if(msg==1){	
+						$('.request-action-'+id).html('Request Decline');
+						}
+					}        
+	});
+	}
+
+	
+function accept_trequest(id) {
+	$.ajax({
+				url: url+"/users/accepttFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) { 
+					 if(msg==1){	
+						$('.trequest-action-'+id).html('Request Accepted');
+						}
+					}        
+		});
+	
+		}
+
+
+function decline_trequest(id) {
+	$.ajax({
+				url: url+"/users/declinetFriendRequest/"+id,    
+				type: "POST",
+				success: function(msg) {						
+					if(msg==1){	
+						$('.trequest-action-'+id).html('Request Decline');
+						}
+					}        
+	});
+	}
+
+
+
+
+$(document).ready(function()
+{
+$('#clickid').click(function()
+{
+
+$.ajax({
+	url: url+"/users/removeNotification",    
+	type: "POST",
+	cache: false,
+	success: function(msg) { 
+	if(msg==1)
+	{
+		$('.readcount').hide();
+	}            
+	
+}        
+});
+
+
+$.ajax({
+	url: url+"/users/removetNotification",    
+	type: "POST",
+	cache: false,
+	success: function(msg) { 
+	if(msg==1)
+	{
+		$('.readcount').hide();
+	}            
+	
+}        
+});
+
+
+
+var X=$(this).attr('value');
+if(X==1)
+{
+$('.my-notfication').hide();
+$('.notification-dd').attr('value', '0');
+}
+else
+{
+$('.my-notfication').show();
+$('.notification-dd').attr('value', '1');
+}
+});
+
+});
+
+
+$(function(){
+$(".search").keyup(function() 
+{ 
+//alert(url);
+var inputSearch = $(this).val();
+var dataString = 'searchword='+ inputSearch;
+if(inputSearch!='')
+{
+      $.ajax({
+      type: "POST",
+      url: url+"/users/searchforuser",
+      data: dataString,
+      cache: false,
+      success: function(html)
+      {
+      $("#divResult").html(html).show();
+      }
+      });
+}return false;    
+});
+/*
+$("#divResult").live("click",function(e){ 
+      var $clicked = $(e.target);
+      var $name = $clicked.find('.name').html();
+      var decoded = $("<div>").html($name).text();
+      $('#inputSearch').val(decoded);
+});
+$(document).live("click", function(e) { 
+      var $clicked = $(e.target);
+      if (! $clicked.hasClass("search")){
+      jQuery("#divResult").fadeOut(); 
+      }
+});
+$('#inputSearch').click(function(){
+      jQuery("#divResult").fadeIn();
+}); */
+});
+
+
+/* Js for Photo section as well as Create album and Image detail page */
+				
+			/* Submit Create album box */
+			  function Subfiles()
+					{
+				//var check=$('#imgtag').val();
+				
+				if(( !$('#current-album').val() ) && (!$('#albumname').val())) { 
+					alert('Please write a album name');
+					return false
+				}
+				 if(!$('.imgpresent')['0'])
+				{
+						alert('Please select any image');
+						return false;
+					}
+				else
+				{
+				document.getElementById('movepics').submit();
+				}
+			}
+	
+			
+		function setAlb(id)
+			{
+			var id =id.split("_");
+			var ids=id[1];
+			var r = confirm('Are you sure to delete album ?');
+					if (r == true) {
+						$.ajax({
+							type: "POST",
+							url: url+"/photos/delalbum/"+ids,
+							success: function(res)
+							{
+								if(res==0)
+								   {
+									window.location.reload();
+								   } else {
+										alert('Something went wrong here !');
+									  }
+							}	
+							
+							}); 
+
+					} else {
+			
+				return false;
+				}
+
+	  		  }
+	
+
+
+     /* Image detail page use only */
+	function setVal(id)
+		{
+			var id =id.split("_");
+			var ids=id[1];
+			
+			var r = confirm('Are you sure to delete the image ?');
+					if (r == true) {
+						$.ajax({
+							type: "POST",
+							url: url+"/photos/delimage/",
+							data: { id:ids }
+							})
+							.done(function( res ) {
+						if(res==0)
+					  		 {
+								window.location.reload(true);
+							
+					 		  } else {				
+						   
+							 	 alert('Something Went wrong here !');
+						  
+						  		}
+							});
+			
+						    } else {
+			
+							return false;
+							}
+
+	    }
+
+	 /* for select the image with select box */
+
+		$(function () {
+			$('#current-album').selectbox();				
+		});
+
+        /*  End of select image box */
+
+	
+	$(function() {
+			$('#multiupload_file').uploadify({
+				'method':'post',
+				'formData'     : {
+					'timestamp' : '<?php echo $timestamp;?>',
+					'userid' : '<?php echo $sess_id; ?>'
+				},
+				'swf'      : '<?php echo LIVE_SITE; ?>/uploadify.swf',
+//				'uploader' : '<?php echo LIVE_SITE; ?>/photos/multipleupload'
+				'uploader' : '<?php echo LIVE_SITE; ?>/php/uploadify.php',
+				'onUploadSuccess' : function(file, data, response) {
+//				alert('Last id is: ' + data); return false;
+				if(data=='0')
+				{
+					//alert(data);
+					alert('Invalid file type.'); return false;
+					//alert(data); return false;
+				}
+				if(data=='00')
+				{
+					//alert(data);
+					alert('Cannot upload image.'); return false;
+				}
+				var imgdata={};
+				imgdata['imgid']=data;
+					
+					$.ajax({
+						type:'post',
+						url:'<?php echo LIVE_SITE; ?>/photos/multipleupload',
+						data:imgdata,
+						success:function(res)
+						{
+							//alert(res)
+				
+							var counter = 0;
+						        var mouseX = 0;
+						        var mouseY = 0;	
+							
+							$('#popup-content').append(res);
+							//alert(res);
+							console.log(res);
+							var start=/@/ig;
+							var word=/@(\w+)/ig;
+							var uniqueid='#ppbox_'+data;
+
+							$(""+uniqueid+" #tagname").live("keyup",function() 
+							{
+							//alert(uniqueid);
+							var content=$(this).val();
+							var go= content.match(start);
+							var name= content.match(word);
+							var dataString = 'searchword='+ name;
+
+							if(go.length>0)
+							{
+							$(""+uniqueid+" #msgbox").slideDown('show');
+							$(""+uniqueid+" #display").slideUp('show');
+							$(""+uniqueid+" #msgbox").html("Type the name of someone or something...");
+							if(name.length>0)
+							{
+							$.ajax({
+							type: "POST",
+							url: "<?php echo LIVE_SITE; ?>/photos/pictagg",
+							data: dataString,
+							cache: false,
+							success: function(html)
+							{
+							$(""+uniqueid+" #msgbox").hide();
+							$(""+uniqueid+" #display").html(html).show();
+							}
+							});
+
+							}
+							}
+							return false;
+							});
+
+							$(""+uniqueid+" .addname").live("click",function(e) 
+							{
+							counter++;
+							   mouseX = e.pageX - $(imgtag).offset().left; // x and y axis
+							      mouseY = e.pageY - $(imgtag).offset().top;
+							/*****************************/
+							   //var oldval= $('#tag_'+imgid).val();
+							//name = $('#tagname').val();
+						      //namval=oldval+','+name;
+						    //  $('#tag_'+imgid).val(namval);
+						  //    $('#taglist ol').append('<li rel=\"'+counter+'\"><a>'+name+'</a> (<a class=\"remove\">Remove</a>)</li>');
+						      $(""+uniqueid+" #imgtag").append('<div class=\"tagview\" id=\"view_'+counter+'\"></div>');
+						      $(""+uniqueid+" #view_" + counter).css({top:mouseY,left:mouseX});
+							/*****************************/	
+
+							var username=$(this).attr('title');
+							var uidd=$(this).attr('uid');
+							var old=$(""+uniqueid+" #imgtextbox").html();
+							var content=old.replace(word,""); 
+							$(""+uniqueid+" #imgtextbox").html(content);
+							var E="<a class='red' contenteditable='false' href='#' >"+username+"</a>";
+							//$(""+uniqueid+" #imgtextbox").append(E);  
+
+							var prevtagloc;
+							prevtagloc=$("#tagtexts_"+data).val();
+
+							var newtagloc=$(""+uniqueid+" #view_"+counter).attr('style');
+							$("#tagtexts_"+data).val(prevtagloc+','+newtagloc);
+							
+
+						
+
+
+							var oldtags;
+							oldtags=$(""+uniqueid+" #ataglist").html();
+							var oldids;
+							oldids=$("#tagids_"+data).val();
+							//	alert("tagids_"+data);
+							//tagtexts_
+							$("#tagids_"+data).val(oldids+','+uidd);
+							$(""+uniqueid+" #ataglist").html(''+oldtags+' <u>'+username+'</u>');  
+							$(""+uniqueid+" #display").hide();
+							$(""+uniqueid+" #msgbox").hide();
+							$(""+uniqueid+" #tagname").focus();
+							 $('#tagit').fadeOut();
+							});
+						
+			
+						}
+					});
+					
+				    }
+
+			});
+
+		});
+		
+	
+			
+	      
+ /* End of Js for Photo section as well as Create album and Image detail page */
+
+
+
+

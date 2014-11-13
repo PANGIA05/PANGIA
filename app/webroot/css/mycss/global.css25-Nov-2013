@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+/***************************************************
+RESET
+***************************************************/
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body {line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}nav ul {list-style:none;}li{ list-style:none;}blockquote, q {quotes:none;}blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}a {margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent; text-decoration:none;}/* change colours to suit your needs */ins {background-color:#ff9;color:#000;text-decoration:none;}mark {background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del {text-decoration: line-through;}abbr[title], dfn[title] {border-bottom:1px dotted;cursor:help;}table {border-collapse:collapse;border-spacing:0;}hr {display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}input, select {vertical-align:middle;}input[type="button"], input[type="submit"]{cursor:pointer;}input{outline:none;}
+input[type="button"]{ outline: none;-moz-outline: none;}
+input{border:none;}
+
+@font-face {
+ font-family: SegoeWP_regular;
+ src: url("../fonts/SegoeWP.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: SegoeWP_regular;
+ src: url("../fonts/SegoeWP.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family: SegoeWP_semibold;
+ src: url("../fonts/SegoeWP-Semibold.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: SegoeWP_semibold;
+ src: url("../fonts/SegoeWP-Semibold.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {
+ font-family: SegoeWP-Light;
+ src: url("../fonts/SegoeWP-Light.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: SegoeWP-Light;
+ src: url("../fonts/SegoeWP-Light.ttf") /* TTF file for CSS3 browsers */
+}
+
+ ::-moz-selection {
+ color: #5f90b0;
+ color: rgba(255, 255, 255, 0.85);
+ background: #51b470;
+   text-shadow: 0 3px 6px #16321F;
+}
+
+::selection {
+ color: #5f90b0;
+ color: rgba(255, 255, 255, 0.85);
+ background: #51b470;
+   text-shadow: 0 3px 6px #16321F;
+}
+body{background:#fff; font-size:12px;color:#555555;font-family: SegoeWP_regular;}
+
+.bnr_str_btn input[type="button"]{font-family:SegoeWP_semibold; color:#fff;}
+.neg-t-shdw, .bnr_str_btn input[type="button"],  .free_acc_btn input[type="button"]{text-shadow:0px -1px 1px #0D1B0E;}
+ul.events-share-btns li input[type="button"], ul.pp-aq-btns li:last-child input, .post-btn-fd-iner{text-shadow:0 -2px 0px #3B8853;}
+.gr_clr{background:#55bc75;}   
+.center_layout{margin:auto;width:940px;}
+.cl_grey, nav.hd_nav a, .add-photo-cont p{color:#959595}
+ul.will-ans-header li input[type="button"]{color:#f9f9f9;font-size:16px;text-shadow:0px 1px 1px #42915a;}
+.sprite-web-icons, ul.will-ans-header li span, .eth-will-title{background-image:url(../images/sprite-web-icons.png); background-repeat:no-repeat;background-color:transparent;}
+.bl-clr, .add-photo-cont span a, .edit-photo-cont span a, .bdy-going p span, span.event-info-title, .ethi-first-block h6, .ethi-first-block-2 h6{color:#5f90b0;}
+ul.events-share-btns li input[type="button"], ul.pp-aq-btns li input, ul.slideshow-back-next li a, .post-btn-fd-iner{font-size:14px; font-family: SegoeWP_regular;color:#fff;}
+ul.three-features li span:first-child, .video_login input[type="button"], .video_login span, .footer-links ul li span:last-child, .copyright, .reg-header p, .reg-step-1-form p input[type="submit"], .enter-mail-add textarea, .inner-search-nav input[type="text"], .inr-user-name h1, ul.aft-lgn-nav li a, span.edit-cmt-time, span.cmnt-name span, .feed-cmnt-wall p, .online-title, .see-all-noti, span.nt-title, .enter-abt ul li p, p.percent-progress span, p.progress-comp-rate, span.msg-dt, .msg-content h6,  .msg-reply-panel h6, ul.attachmnt-msg li a{font-family: SegoeWP_regular;}
+ul.three-features li span:last-child:after, .free_acc_btn input[type="button"], .video_login input + span + span a, .footer-links ul li p, .add-photo-cont span, .reg-header h1, .reg-facebbok, .reg-step-1-form p label, .edit-photo-cont span a, .enter-mail-add p, .reg-step-3-form p label, .inr-user-name p, ul.aft-lgn-nav li span, .feed-share ul li input[type="text"], ul.share-subsel li a, h6.cmt-user-name, p.user-comnt-text, ul.cmnt-sharing li a, .post-cmnt input[type="text"], span.cmnt-name, .posted-cmnt-text p, ul.cmnt-sharing li a, ul.cmnt-sharing-count li, .feed-cmnt-wall figure, .feed-cmnt-wall p span, ul.friends-sel-tab li a, .frinds-list p, .noti-mid-cont h2, ul.noti-users-list li p.n-user-name, ul.noti-users-list li p.posted-detail, ul.noti-users-list li span.n-time, .import-fb-block span, .today-ntf ul li p, .abt-data-cont h1, span.edit-abt-icon a, .abt-data-cont p, .abt-data-cont p span, p.percent-progress, p.progress-comp-rate span,  span.msg-sbj-line, .msg-noti span, span.msg-back-link a,.photo-edit-options ul li a{font-family: SegoeWP_semibold;}
+span.close-prgrss,span.msg-back-link a{cursor:pointer;}
+span.close-prgrss, span.msg-back-link a, ul.attachmnt-msg li a{display:block;}
+.checkbox {position:relative;height: 15px;width: 17px;clear:left;float:left;margin:3px 3px 0px 0px;	background: url("../images/checkbox.png") no-repeat;cursor: default;text-align:left;overflow:hidden;}
+.checkbox input, .radio input, .radio2 input{position:absolute; left:-400px;top:0px;}
+
+.sbHolder{
+background:transparent url(../images/sprite_icons.png) no-repeat  -299px -255px;
+	font-size: 12px;float:left;
+	font-weight: normal;
+	height: 38px;
+	position: relative;
+	width: 73px;margin-top:8px;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 38px;
+	left: 0;
+	line-height: 35px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 73px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #717171;font-family: SegoeWP_regular;font-size:12px;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(../images/select-icons.png) 0 -113px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	background: url(../images/select-icons.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../images/select-icons.png) 0 -13px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../images/select-icons.png) 0 -66px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #fff;
+	box-shadow:0 2px 7px -3px #000000;
+	list-style: none;
+	left: 1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 28px;
+	width: 200px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+	font-size:12px;
+	font-family: SegoeWP_regular;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #555555;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #000;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: solid 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}
+
+#month-dd-cont .sbHolder{background-position:-299px -255px; width:72px;}
+#day-dd-cont .sbHolder{background-position:-461px -255px;width:68px;margin-left:2px;}
+#year-dd-cont .sbHolder{background-position:-461px -255px;width:68px;margin-left:2px;}
+#current-album-dd .sbHolder{background:#fff;border:1px solid #d7d7d7;width:185px;margin-top:0px;}
+#current-album-dd .sbHolder .sbToggle{background:#f9f9f9 url(../images/sprite_icons.png) no-repeat -707px -206px;width:36px;height:38px;border-left:1px solid #d7d7d7}
+#current-album-dd .sbHolder .sbSelector{width:185px;color:#707070;font-family: SegoeWP_semibold;}
+#current-album-dd .sbHolder .sbOptions{top:40px !important; box-shadow:0 4px 7px -3px #666666}
